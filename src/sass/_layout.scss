@@ -1,0 +1,35 @@
+/* ===========================
+   ToC 
+
+   1.0 Phone
+   1.1 Footer
+   2.0 Tablet 600px - 900px
+   3. 550px and Above
+   =========================== */
+
+/* ===================
+   1.0 Phones 0 - 549px 
+   =================== */
+
+/* =============
+   1.1 Footer 
+   ============= */
+
+.attribution {
+  font-size: 1.4rem;
+  text-align: center;
+
+  text-wrap: balance;
+
+  @media (min-width: 600px) {
+  }
+
+  @media (min-width: 1420px) {
+  }
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.app-layout {
+}
