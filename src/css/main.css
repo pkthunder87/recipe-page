@@ -138,6 +138,10 @@ select {
   color: hsl(var(--color-purple-500));
 }
 
+.attribution {
+  font-size: 7rem;
+}
+
 /* ==========================
    2.0 Tablets 600px - 1399px 
    ========================== */

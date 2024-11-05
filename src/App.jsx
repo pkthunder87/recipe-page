@@ -1,7 +1,9 @@
+import "./sass/main.scss";
+
 function App() {
   return (
     <div>
-      <div>Recipe Page</div>
+      <div className="main-title young-serif">Recipe Page</div>
       <div>
         Simple Omelette Recipe An easy and quick dish, perfect for any meal.
         This classic omelette combines beaten eggs cooked to perfection,
@@ -33,7 +35,11 @@ function App() {
           Frontend Mentor
         </a>
         . Coded by{" "}
-        <a href="#" target="_blank" rel="noreferrer">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/pkthunder87/recipe-page"
+        >
           PkThunder.
         </a>
       </div>
