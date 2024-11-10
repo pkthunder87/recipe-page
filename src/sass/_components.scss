@@ -31,7 +31,8 @@
 
 .header {
   &__img {
-    width: 80%;
+    border-radius: 12px;
+    margin-block-end: 4rem;
   }
 }
 
@@ -44,6 +45,53 @@
 .inst {
   &__bold {
     font-weight: 600;
+  }
+}
+
+.nutr {
+  // Grid w/borders from https://geary.co/internal-borders-css-grid/
+
+  // Position on the page for testing
+  .grid {
+    display: grid;
+    margin-block: 1em;
+    grid-auto-rows: 1fr;
+
+    // Locally scoped variables
+    --gap: 2rem;
+    --line-offset: calc(var(--gap) / 2);
+    --line-thickness: 1px;
+    --line-color: hsl(var(--color-stone-150));
+
+    // Grid layout
+    display: grid;
+    overflow: hidden;
+    gap: var(--gap);
+
+    &__unit {
+      color: hsl(var(--color-rose-800));
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: var(--line-color);
+        z-index: 1;
+      }
+
+      &::after {
+        inline-size: 100vw;
+        block-size: var(--line-thickness);
+        inset-inline-start: 0;
+        inset-block-start: calc(var(--line-offset) * -1);
+      }
+    }
   }
 }
 

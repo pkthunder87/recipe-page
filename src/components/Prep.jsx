@@ -1,7 +1,7 @@
 function Prep() {
   return (
     <section className="prep">
-      <div className="prep__title">Preparation time</div>
+      <h2 className="prep__title">Preparation time</h2>
       <ul className="prep__list">
         <li>
           <span className="prep__bold">Total: </span>Approximately 10 minutes

@@ -1,7 +1,7 @@
 function Ingredients() {
   return (
     <section className="ingr">
-      <div className="ingr__title">Ingredients</div>
+      <h2 className="ingr__title">Ingredients</h2>
       <ul className="prep__list">
         <li>2-3 large eggs</li>
         <li>Salt, to taste</li>

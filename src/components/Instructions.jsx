@@ -1,7 +1,7 @@
 function Instructions() {
   return (
     <section className="inst">
-      <div className="inst__title">Instructions</div>
+      <h2 className="inst__title">Instructions</h2>
       <ol className="inst__list">
         <li>
           <span className="inst__bold">Beat the eggs: </span>In a bowl, beat the
