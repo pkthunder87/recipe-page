@@ -1,7 +1,7 @@
-function Prep() {
+function Preparation() {
   return (
     <section className="prep">
-      <h2 className="prep__title">Preparation time</h2>
+      <h3 className="prep__title">Preparation time</h3>
       <ul className="prep__list">
         <li>
           <span className="prep__bold">Total: </span>Approximately 10 minutes
@@ -17,4 +17,4 @@ function Prep() {
   );
 }
 
-export default Prep;
+export default Preparation;

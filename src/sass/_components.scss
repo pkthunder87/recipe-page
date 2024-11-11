@@ -30,19 +30,70 @@
    ============================== */
 
 .header {
-  &__img {
-    border-radius: 12px;
-    margin-block-end: 4rem;
-  }
-}
+  margin-block-end: 2.5rem;
 
-.prep {
-  &__bold {
-    font-weight: 600;
+  &__img {
+    margin-block-end: 4rem;
+    margin-block-start: -3rem;
+    margin-inline-start: -4rem;
+    max-width: 121%;
+
+    @media (min-width: 600px) {
+      border-radius: 12px;
+    }
+  }
+
+  &__title {
+    font-size: 3.7rem;
+    text-wrap: stable;
+    line-height: 1em;
+    margin-block-end: 2.5rem;
+    color: hsl(var(--color-stone-900));
+  }
+
+  &__text {
+    font-size: 1.73rem;
+    line-height: 1.4em;
+  }
+
+  .prep {
+    margin-block-start: 3rem;
+
+    background-color: hsl(var(--color-rose-50));
+    padding: 2rem;
+    padding-inline-end: 5rem;
+
+    &__title {
+      font-family: "Outfit", sans-serif;
+      font-weight: 600;
+      font-size: 2.1rem;
+      margin-block-end: 1.5rem;
+    }
+
+    &__bold {
+      font-weight: 700;
+      font-size: 1.7rem;
+    }
+
+    li {
+      font-size: 1.7rem;
+      margin: 1.5rem 0;
+    }
   }
 }
 
 .inst {
+  ol {
+    padding-left: 2.5rem;
+    margin-left: 0;
+  }
+
+  li::marker {
+    color: hsl(var(--color-rose-800));
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
   &__bold {
     font-weight: 600;
   }
@@ -54,7 +105,7 @@
   // Position on the page for testing
   .grid {
     display: grid;
-    margin-block: 1em;
+    margin-block-start: 1em;
     grid-auto-rows: 1fr;
 
     // Locally scoped variables
@@ -67,6 +118,10 @@
     display: grid;
     overflow: hidden;
     gap: var(--gap);
+
+    &__facts {
+      margin-inline-start: 3.5rem;
+    }
 
     &__unit {
       color: hsl(var(--color-rose-800));

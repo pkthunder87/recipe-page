@@ -4,19 +4,19 @@ import Header from "./components/Header";
 import Ingredients from "./components/Ingredients";
 import Instructions from "./components/Instructions";
 import Nutrition from "./components/Nutrition";
-import Prep from "./components/Prep";
 import "./sass/main.scss";
 
 function App() {
   return (
-    <AppLayout>
-      <Header />
-      <Prep />
-      <Ingredients />
-      <Instructions />
-      <Nutrition />
+    <div>
+      <AppLayout>
+        <Header />
+        <Ingredients />
+        <Instructions />
+        <Nutrition />
+      </AppLayout>
       <Attribution />
-    </AppLayout>
+    </div>
   );
 }
 

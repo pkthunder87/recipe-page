@@ -1,3 +1,5 @@
+import Preparation from "./Preparation";
+
 function Header() {
   return (
     <section className="header">
@@ -12,6 +14,7 @@ function Header() {
         combines beaten eggs cooked to perfection, optionally filled with your
         choice of cheese, vegetables, or meats.
       </p>
+      <Preparation />
     </section>
   );
 }

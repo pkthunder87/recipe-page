@@ -23,6 +23,8 @@
   margin-block-start: 3rem;
 
   @media (min-width: 600px) {
+    margin-block-start: -7rem;
+    margin-block-end: 3rem;
   }
 
   @media (min-width: 1420px) {
@@ -33,11 +35,15 @@
 }
 
 .app-layout {
-  padding: 4rem;
-  max-width: 52%;
-  overflow-x: hidden;
+  padding: 3rem;
   background-color: white;
 
-  border-radius: 24px;
-  margin: 10rem auto;
+  @media (min-width: 600px) {
+    padding: 4rem;
+    max-width: 52%;
+    overflow-x: hidden;
+
+    border-radius: 24px;
+    margin: 10rem auto;
+  }
 }
