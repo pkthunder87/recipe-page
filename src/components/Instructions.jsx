@@ -20,7 +20,8 @@ function Instructions() {
         <li>
           <span className="inst__bold">Add fillings (optional): </span>When the
           eggs begin to set at the edges but are still slightly runny in the
-          middle, sprinkle your chosen fillings over one half of the omelette.
+          middle, sprinkle your chosen fillings over one half of
+          the&nbsp;omelette.
         </li>
         <li>
           <span className="inst__bold">Fold and serve: </span>As the omelette

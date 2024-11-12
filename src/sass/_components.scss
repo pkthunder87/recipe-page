@@ -25,9 +25,38 @@
   --color-white: 0deg, 0%, 100%;
 }
 
+/* =================
+   Mixins
+   ================= */
+
+// Grid w/borders from https://geary.co/internal-borders-css-grid/
+
+@mixin line-divider {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: hsl(var(--color-stone-150));
+    z-index: 1;
+  }
+
+  &::after {
+    inline-size: 100%;
+    block-size: 1px;
+    inset-inline-start: 0;
+  }
+}
+
 /* ==============================
    1.0 Phones & Tablets 0 - 900px 
    ============================== */
+
+.divider {
+  margin-block-start: 5rem;
+  border-top: 1px solid red;
+}
 
 .header {
   margin-block-end: 2.5rem;
@@ -39,6 +68,10 @@
     max-width: 121%;
 
     @media (min-width: 600px) {
+      margin-block-end: 3.5rem;
+      margin-block-start: 0;
+      margin-inline-start: 0;
+      max-width: 100%;
       border-radius: 12px;
     }
   }
@@ -52,7 +85,6 @@
   }
 
   &__text {
-    font-size: 1.73rem;
     line-height: 1.4em;
   }
 
@@ -77,8 +109,23 @@
 
     li {
       font-size: 1.7rem;
-      margin: 1.5rem 0;
+      margin: 1.4rem 0;
     }
+  }
+}
+
+.ingr {
+  margin-block-end: 5.6rem;
+
+  @include line-divider;
+
+  ul {
+    margin-block-end: 3.2rem;
+  }
+
+  li {
+    font-size: 1.7rem;
+    margin: 1.3rem 0;
   }
 }
 
@@ -86,6 +133,10 @@
   ol {
     padding-left: 2.5rem;
     margin-left: 0;
+  }
+
+  li:nth-child(2) {
+    letter-spacing: -0.2px;
   }
 
   li::marker {
@@ -103,6 +154,7 @@
   // Grid w/borders from https://geary.co/internal-borders-css-grid/
 
   // Position on the page for testing
+  text-wrap: balance;
   .grid {
     display: grid;
     margin-block-start: 1em;
