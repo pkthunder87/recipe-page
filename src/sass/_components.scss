@@ -130,23 +130,35 @@
 }
 
 .inst {
-  ol {
-    padding-left: 2.5rem;
-    margin-left: 0;
-  }
+  margin-block-end: 5.6rem;
+  @include line-divider;
 
-  li:nth-child(2) {
-    letter-spacing: -0.2px;
-  }
-
-  li::marker {
-    color: hsl(var(--color-rose-800));
-    font-size: 1.6rem;
-    font-weight: 600;
+  &__title {
+    margin-block-end: 1.5rem;
   }
 
   &__bold {
     font-weight: 600;
+  }
+
+  ol {
+    padding-left: 2.5rem;
+    margin-left: 0;
+    margin-block-end: 3.2rem;
+  }
+
+  li {
+    margin: 1.3rem 0;
+
+    &:nth-child(2) {
+      letter-spacing: -0.2px;
+    }
+
+    &::marker {
+      color: hsl(var(--color-rose-800));
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
   }
 }
 
