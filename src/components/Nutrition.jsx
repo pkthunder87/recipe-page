@@ -1,8 +1,8 @@
 function Nutrition() {
   return (
     <section className="nutr">
-      <h2>Nutrition</h2>
-      <p>
+      <h2 className="nutr__title">Nutrition</h2>
+      <p className="nutr__text">
         The table below shows nutritional values per serving without the
         additional fillings.
       </p>
