@@ -24,6 +24,11 @@
   margin-block-end: -1.5rem;
 
   @media (min-width: 600px) {
+    margin-block-start: -2rem;
+    margin-block-end: 3rem;
+  }
+
+  @media (min-width: 900px) {
     margin-block-start: -7rem;
     margin-block-end: 3rem;
   }
@@ -40,6 +45,15 @@
   background-color: white;
 
   @media (min-width: 600px) {
+    padding: 4rem;
+    max-width: 90%;
+    overflow-x: hidden;
+
+    border-radius: 24px;
+    margin: 5rem auto;
+  }
+
+  @media (min-width: 900px) {
     padding: 4rem;
     max-width: 52%;
     overflow-x: hidden;
