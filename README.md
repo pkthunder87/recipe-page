@@ -11,7 +11,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Live Site URL: [Github Pages](ReplaceWithURL)
+- Live Site URL: [Github Pages](https://pk-recipe-page.netlify.app/)
 
 ### Built with
 
