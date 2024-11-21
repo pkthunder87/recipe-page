@@ -5,7 +5,7 @@ function Header() {
     <section className="header">
       <img
         className="header__img"
-        src="../src/assets/images/image-omelette.jpeg"
+        src="../assets/images/image-omelette.jpeg"
         alt="a tasty omelette"
       />
       <h1 className="header__title">Simple Omelette Recipe</h1>
